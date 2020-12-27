@@ -176,7 +176,7 @@ namespace SeleniumUSForm.Tests
         {
             SeleniumMethods.GoToWebsite(_driver, SeleniumParameters.USFormURL);
             SeleniumMethods.PickAndFillWebElementByXPath(_driver, SeleniumParametersElementsPaths.FirstNameInputBoxXPath, "Michałek");
-            SeleniumMethods.PickAndFillWebElementByXPath(_driver, SeleniumParametersElementsPaths.LastNameInputBoxXPath, ""okoń"; Select * from password_table;");
+            SeleniumMethods.PickAndFillWebElementByXPath(_driver, SeleniumParametersElementsPaths.LastNameInputBoxXPath, "'okoń'; Select * from password_table;");
             SeleniumMethods.PickAndFillWebElementByXPath(_driver, SeleniumParametersElementsPaths.DateInputBoxXPath, "12-12-2077");
 
             SeleniumMethods.SetCheckBoxByXPath(_driver, SeleniumParametersElementsPaths.ParentsCheckBoxXPath, false);
@@ -251,7 +251,7 @@ namespace SeleniumUSForm.Tests
         public void InputBoxWrongInput12()
         {
             SeleniumMethods.GoToWebsite(_driver, SeleniumParameters.USFormURL);
-            SeleniumMethods.PickAndFillWebElementByXPath(_driver, SeleniumParametersElementsPaths.FirstNameInputBoxXPath, """""""""""""""");
+            SeleniumMethods.PickAndFillWebElementByXPath(_driver, SeleniumParametersElementsPaths.FirstNameInputBoxXPath, "''''''''''''''''");
             SeleniumMethods.PickAndFillWebElementByXPath(_driver, SeleniumParametersElementsPaths.LastNameInputBoxXPath, "Artefaktowy");
             SeleniumMethods.PickAndFillWebElementByXPath(_driver, SeleniumParametersElementsPaths.DateInputBoxXPath, "12-12-2077");
 
@@ -271,7 +271,7 @@ namespace SeleniumUSForm.Tests
         {
             SeleniumMethods.GoToWebsite(_driver, SeleniumParameters.USFormURL);
             SeleniumMethods.PickAndFillWebElementByXPath(_driver, SeleniumParametersElementsPaths.FirstNameInputBoxXPath, "Michałek");
-            SeleniumMethods.PickAndFillWebElementByXPath(_driver, SeleniumParametersElementsPaths.LastNameInputBoxXPath, """""""""""""""");
+            SeleniumMethods.PickAndFillWebElementByXPath(_driver, SeleniumParametersElementsPaths.LastNameInputBoxXPath, "''''''''''''''''");
             SeleniumMethods.PickAndFillWebElementByXPath(_driver, SeleniumParametersElementsPaths.DateInputBoxXPath, "12-12-2077");
 
             SeleniumMethods.SetCheckBoxByXPath(_driver, SeleniumParametersElementsPaths.ParentsCheckBoxXPath, false);
